@@ -56,4 +56,6 @@ public class ClaimServiceImpl implements ClaimService {
             return "Claim amount is less than 10000";
         }
     }
+
+    
 }
