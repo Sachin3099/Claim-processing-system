@@ -1,8 +1,12 @@
 package com.stackroute.ClaimProcessingSystem;
-import org.springframework.data.annotation.Id;
 
 
+import lombok.Data;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
+@Data
+@Entity
 public class Claim {
    //Generate a Claim class with attributes like claim number, policy number, date, status, and description
     //mARK CLAIM NUMBER AS PRIMARY KEY

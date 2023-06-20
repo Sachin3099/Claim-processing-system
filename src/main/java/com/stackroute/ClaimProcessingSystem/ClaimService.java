@@ -4,7 +4,9 @@ package com.stackroute.ClaimProcessingSystem;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
 
+@Service
 public interface ClaimService{
     public Claim saveClaim(Claim claim);
     public List<Claim> getAllClaims();
