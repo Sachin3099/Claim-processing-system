@@ -18,7 +18,9 @@ public class ClaimServiceImpl implements ClaimService {
 
     @Override
     public Claim saveClaim(Claim claim) {
+        claim.setStatus("Submitted");
         return claimRepository.save(claim);
+
     }
 
     @Override
@@ -48,16 +50,146 @@ public class ClaimServiceImpl implements ClaimService {
         return "Claim deleted";
     }
 
+    //Write a java method for validate a claim and status as validated
+
     @Override
+
     public String validateClaim(int id) {
         Claim claim = claimRepository.findById(id).get();
-        if(claim.getClaimAmount() > 10000){
-            return "Claim amount is greater than 10000";
+        if(claim.getStatus().equals("Submitted")){
+            claim.setStatus("Validated");
+            claimRepository.save(claim);
+            return "Claim validated";
         }
         else{
-            return "Claim amount is less than 10000";
+            return "Claim not validated";
         }
     }
+
+
+      
+
+
+
+    @Override
+    public String approveClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Validated")){
+            claim.setStatus("Approved");
+            claimRepository.save(claim);
+            return "Claim approved";
+        }
+        else{
+            return "Claim not approved";
+        }
+    }
+
+    @Override
+    public String rejectClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Validated")){
+            claim.setStatus("Rejected");
+            claimRepository.save(claim);
+            return "Claim rejected";
+        }
+        else{
+            return "Claim not rejected";
+        }
+    }
+
+    @Override
+
+    public String settleClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Approved")){
+            claim.setStatus("Settled");
+            claimRepository.save(claim);
+            return "Claim settled";
+        }
+        else{
+            return "Claim not settled";
+        }
+    }
+
+    @Override
+    public String cancelClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Approved")){
+            claim.setStatus("Cancelled");
+            claimRepository.save(claim);
+            return "Claim cancelled";
+        }
+        else{
+            return "Claim not cancelled";
+        }
+    }
+
+    @Override
+    public String denyClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Approved")){
+            claim.setStatus("Denied");
+            claimRepository.save(claim);
+            return "Claim denied";
+        }
+        else{
+            return "Claim not denied";
+        }
+    }
+
+    @Override
+
+    public String payClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Settled")){
+            claim.setStatus("Paid");
+            claimRepository.save(claim);
+            return "Claim paid";
+        }
+        else{
+            return "Claim not paid";
+        }
+    }
+
+    @Override
+
+    public String paymentStatusClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Paid")){
+            return "Claim paid";
+        }
+        else{
+            return "Claim not paid";
+        }
+    }
+
+    @Override
+
+    public String settlementOfferClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Approved")){
+            claim.setStatus("Settlement Offered");
+            claimRepository.save(claim);
+            return "Settlement offered";
+        }
+        else{
+            return "Settlement not offered";
+        }
+    }
+
+    @Override
+
+    public String settlementOfferStatusClaim(int id) {
+        Claim claim = claimRepository.findById(id).get();
+        if(claim.getStatus().equals("Settlement Offered")){
+            return "Settlement offered";
+        }
+        else{
+            return "Settlement not offered";
+        }
+    }
+
+
 
     
 }
