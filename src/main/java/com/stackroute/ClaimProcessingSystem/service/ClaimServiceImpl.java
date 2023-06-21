@@ -1,10 +1,12 @@
 //Implement a service class to perform claim validation, including checks for policy coverage, claim amount, and supporting documents
 
 
-package com.stackroute.ClaimProcessingSystem;
+package com.stackroute.ClaimProcessingSystem.service;
 
 import java.util.List;
 
+import com.stackroute.ClaimProcessingSystem.model.Claim;
+import com.stackroute.ClaimProcessingSystem.repository.ClaimRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

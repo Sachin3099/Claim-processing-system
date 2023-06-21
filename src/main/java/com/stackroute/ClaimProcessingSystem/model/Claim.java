@@ -1,4 +1,4 @@
-package com.stackroute.ClaimProcessingSystem;
+package com.stackroute.ClaimProcessingSystem.model;
 
 
 import lombok.Data;
@@ -16,6 +16,8 @@ public class Claim {
     private String date;
     private String status;
     private String description;
+    private int claimAmount;
+
 
     //Generate getters and setters
     public int getClaimNumber() {
@@ -53,11 +55,8 @@ public class Claim {
     public int getClaimAmount() {
         return 0;
     }
-    
 
-
-
-
-
-
+    public void setClaimAmount(int claimAmount) {
+        this.claimAmount = claimAmount;
+    }
 }

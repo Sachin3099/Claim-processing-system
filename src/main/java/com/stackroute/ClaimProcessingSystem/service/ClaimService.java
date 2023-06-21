@@ -1,9 +1,10 @@
 //Implement a service class that handles the business logic for claims, including claim validation and eligibility checks.
 
-package com.stackroute.ClaimProcessingSystem;
+package com.stackroute.ClaimProcessingSystem.service;
 
 import java.util.List;
 
+import com.stackroute.ClaimProcessingSystem.model.Claim;
 import org.springframework.stereotype.Service;
 
 @Service
