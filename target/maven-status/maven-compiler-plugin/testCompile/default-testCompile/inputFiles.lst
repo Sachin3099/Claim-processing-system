@@ -1,1 +1,3 @@
 /workspaces/Claim-processing-system/src/test/java/com/stackroute/ClaimProcessingSystem/ClaimProcessingSystemApplicationTests.java
+/workspaces/Claim-processing-system/src/test/java/com/stackroute/ClaimProcessingSystem/service/ClaimServiceTest.java
+/workspaces/Claim-processing-system/src/test/java/com/stackroute/ClaimProcessingSystem/controller/ClaimControllerTest.java

@@ -1,5 +1,6 @@
-com/stackroute/ClaimProcessingSystem/ClaimRepository.class
+com/stackroute/ClaimProcessingSystem/repository/ClaimRepository.class
+com/stackroute/ClaimProcessingSystem/service/ClaimService.class
+com/stackroute/ClaimProcessingSystem/service/ClaimServiceImpl.class
 com/stackroute/ClaimProcessingSystem/ClaimProcessingSystemApplication.class
-com/stackroute/ClaimProcessingSystem/Claim.class
-com/stackroute/ClaimProcessingSystem/ClaimService.class
-com/stackroute/ClaimProcessingSystem/ClaimController.class
+com/stackroute/ClaimProcessingSystem/controller/ClaimController.class
+com/stackroute/ClaimProcessingSystem/model/Claim.class

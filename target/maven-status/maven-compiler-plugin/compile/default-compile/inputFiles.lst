@@ -1,5 +1,6 @@
 /workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/ClaimProcessingSystemApplication.java
-/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/ClaimController.java
-/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/ClaimRepository.java
-/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/Claim.java
-/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/ClaimService.java
+/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/service/ClaimService.java
+/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/repository/ClaimRepository.java
+/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/service/ClaimServiceImpl.java
+/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/model/Claim.java
+/workspaces/Claim-processing-system/src/main/java/com/stackroute/ClaimProcessingSystem/controller/ClaimController.java

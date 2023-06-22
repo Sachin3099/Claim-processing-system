@@ -1,13 +1,13 @@
-// package com.stackroute.ClaimProcessingSystem;
+package com.stackroute.ClaimProcessingSystem;
 
-// import org.junit.jupiter.api.Test;
-// import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
-// @SpringBootTest
-// class ClaimProcessingSystemApplicationTests {
+@SpringBootTest
+class ClaimProcessingSystemApplicationTests {
 
-// 	@Test
-// 	void contextLoads() {
-// 	}
+	@Test
+	void contextLoads() {
+	}
 
-// }
+}
